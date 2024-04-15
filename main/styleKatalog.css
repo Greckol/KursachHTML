@@ -1,0 +1,181 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333; /* Цвет текста */
+}
+
+body{
+    min-width: 1280px;  /**/
+    max-width: 1680px;
+    margin: auto;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 20px;
+
+}
+
+.filters {
+    width: 220px; /* Фиксированная ширина для колонки фильтров */
+    margin-right: 20px;
+}
+
+.filter-group {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#manufacturer {
+    width: 100%;
+}
+
+.filter-group h3 {
+    margin-bottom: 10px;
+    color: #4facfe; /* Цвет заголовков фильтров */
+}
+
+.filter-group label,
+.filter-group select,
+.filter-group input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-list li:hover {
+    background-color: #eaeaea;
+}
+
+.filter-actions {
+    text-align: center;
+}
+
+.filter-actions button {
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00f2fe;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.filter-actions button:last-child {
+    background-color: #f44336; /* Красный цвет для кнопки "Сбросить" */
+}
+
+.filter-actions button:hover {
+    opacity: 0.9;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между продуктами */
+    overflow: hidden;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(28% - 20px); /* Два товара в ряд */
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.catalog-controls {
+  margin-left: 15%;
+  margin-right: 9%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+#view-grid {
+  background: url('images/grid.png') no-repeat center center;
+  background-size: cover; /* Масштабирует изображение по размеру кнопки */
+  border: none;
+  cursor: pointer;
+  width: 24px; /* Укажите нужный размер */
+  height: 24px; /* Укажите нужный размер */
+}
+
+#view-list {
+  background: url('images/list.png') no-repeat center center;
+  background-size: cover; /* Масштабирует изображение по размеру кнопки */
+  border: none;
+  cursor: pointer;
+  width: 24px; /* Укажите нужный размер */
+  height: 24px; /* Укажите нужный размер */
+}
+
+.sort-options button,
+.view-options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.sort-options button:hover,
+.view-options button:hover {
+  text-decoration: underline;
+}
+
+/* Иконки можно добавить через псевдоэлементы или в виде изображений внутри кнопок, если у вас есть соответствующие изображения. */
+
+/* Стили для активного состояния */
+.sort-options button.active,
+.view-options button.active {
+  font-weight: bold;
+}
+
+
+

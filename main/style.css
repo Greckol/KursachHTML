@@ -1,0 +1,694 @@
+:root {
+    --blueGradient: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f2f2f2;
+}
+
+.main {
+  background: white;
+  min-width: 1480px;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* прихедер */
+
+.preHeader {
+  background: whitesmoke;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preHeader li {
+  flex-grow: 1;
+  padding-top: 10px;
+  text-align: center;
+  height: 30px;
+}
+
+.preHeader li a {
+  font-size: 13px;
+  color: gray;
+}
+
+
+
+/*под верхнем слайдером*/
+.postHeader {
+  background: rgb(255, 255, 255);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+
+.postHeader a {
+  padding-right: 90px;
+}
+
+.postHeader img {
+  height: auto;
+  width: 30px;
+  padding-left: 90px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; 
+  padding: 10px; 
+  background-color: var(--pink);
+  color: white;
+}
+
+.logo-section img {
+  width: 80px;
+  height: auto;
+  padding-left: 20px;
+}
+
+.info-section img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.info-section {
+  margin-left: 30px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-section p {
+  margin: 0;
+  line-height: 1.2;
+  color: #333;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-section input {
+  padding: 5px;
+  margin-right: 5px;
+  width: 405px;
+  height: 25px;
+  background: whitesmoke;
+}
+
+.search-section button {
+  cursor: pointer;
+}
+
+.search-section button img{
+    width: 24px;
+    height: 100%;
+}
+
+.user-interaction-section {
+  display: flex;
+  align-items: center;
+}
+
+.counter{
+    color: gray;
+}
+
+.counter-cart{
+    color: gray;
+    transform: translateX(-35px);
+    
+}
+
+.user-interaction-section div {
+  display: flex;
+  align-items: center;
+}
+
+.user-interaction-section img {
+  width: 30px; 
+  height: auto;
+}
+
+.user-interaction-section .cart img {
+  margin-top: 19px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  /* margin-right: -10px; */
+}
+
+.cart img,
+.favorites img {
+  margin-bottom: 4px; 
+  margin-right: 2px;
+}
+
+.cart p {
+  margin: 0; 
+  color: rgba(191, 191, 191, 0.765);
+}
+
+.user-interaction-section span {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.favorites {
+  padding-right: 2px;
+}
+
+.logo,
+.slogan {
+  float: left;
+}
+
+.logo {
+  margin: 8px 0 0 30px;
+}
+
+.slogan {
+  margin: 40px 0 0 30px;
+}
+
+.head-contact {
+  float: right;
+  background: #f8fafb url(images/phone-img.jpg) 250px 8px no-repeat;
+  border: 2px solid #edf2f6;
+  border-radius: 0 0 10px 10px;
+  text-align: right;
+  margin: 0 6px 0 0;
+  padding: 5px 65px 5px 15px;
+}
+
+.head-contact p {
+  font-size: 12px;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.3;
+  margin: 0 0 3px 0;
+}
+
+.head-contact p strong {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.head-contact p span {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.search-head {
+  float: right;
+  list-style: none;
+  background: url(images/bg-search.jpg) no-repeat left top;
+  width: 305px;
+  height: 29px;
+  margin: 5px 6px 5px 0;
+}
+
+#quickquery {
+  border: none;
+  margin: 6px 30px 3px 10px;
+  width: 210px;
+  font-size: 12px;
+}
+
+.search-head li {
+  padding-top: 2px;
+  float: left;
+}
+
+.search-btn {
+  margin: 100px 0 0 0;
+} 
+/* меню */
+
+.menu {
+  background: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  flex-grow: 1;
+  padding-top: 10px;
+  text-align: center;
+  height: 30px;
+}
+
+.menu li a {
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Добавьте сюда любые другие стили, которые вы хотите применить к вашему меню */
+
+
+
+
+/*футер*/
+
+.footer {
+  background: rgb(142, 134, 134);
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 0 10px 0;
+}
+
+.flago {
+  float: left;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.flago p {
+  font: bold 18px Verdana, Geneva, sans-serif;
+}
+
+.fphone {
+  float: right;
+  text-align: right;
+  font: 12px Verdana, Geneva, sans-serif;
+  margin: 15px 20px 0 0;
+}
+
+.fphone h2 {
+  font-size: 14px;
+}
+
+.fphone h1 {
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+.fmenu {
+  font: 14px Verdana, Geneva, sans-serif;
+  overflow: hidden;
+  margin: 15px auto 0 auto;
+  max-width: 660px;
+  display: flex; /* Устанавливаем flexbox для внешнего контейнера */
+  justify-content: space-between; /* Распределяем пространство между колонками */
+}
+
+.fmenu p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.fmenu ul {
+  float: left;
+  list-style: none;
+  margin: 15px;
+}
+
+.fmenu ul li {
+  margin: 0 0 5px 0;
+}
+
+.fmenu ul a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+.fmenu li a {
+}
+
+.fmenu ul a:hover {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+.fmenuBody li a {
+  font-size: 12px;
+}
+.fmenuBody {
+  margin-top: 20px;
+}
+
+/* о компании */
+.containerAbout {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8; /* Цвет фона всего контейнера */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.containerAbout .text-container p{
+    color: gray;
+    padding-right: 30%;
+}
+
+.image-container {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    padding-right: 150px; /* Отступ между изображением и текстом */
+    padding-left: 160px;
+}
+  
+/* Слайдер хедера */
+.mySwiper{
+  width: 100%;
+  height: 400px;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-wrapper img {
+  height: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  color: var(--blueGradient);
+}
+
+.mySwiper .swiper-pagination-progressbar {
+  background: whitesmoke !important;
+}
+
+.mySwiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #4facfe !important;
+}
+
+/* Карта */
+.store-locator {
+  position: relative;
+  background-image: url("images/map.png"); 
+  background-size: cover;
+  height: 400px; 
+}
+
+.store-locator .tabs .tab.active{
+    position: absolute;
+    top: 20px; 
+    right: 15px;
+    height: 75px;
+    font-size: 14px;
+    color: white;
+}
+
+.stores-info {
+  position: absolute;
+  top: 20px; 
+  left: 20px;
+}
+
+.store {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px; 
+  width: 200px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.map-action button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Новости */
+
+.news-section {
+    margin: 20px;
+}
+
+.news-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.news-section .tabs .tab.active{
+    width: 150px;
+}
+
+.news-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+  flex-basis: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  font-size: 0.9em;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.news-item h3 {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.news-item p {
+  font-size: 1em;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.news-section header {
+    padding-bottom: 30px;
+}
+
+.support-section {
+    margin: 20px;
+    height: 320px;
+    width: 50%;
+    
+}
+
+
+.support-section img {
+    
+    height: 30px;
+    width: 30px;
+}
+
+.support-section h2 {
+    padding-bottom: 10px;
+}
+
+.support-section p {
+    padding-top: 10px;
+}
+
+.support-section .tabs {
+    padding-top: 10px;
+}
+
+.mySwiperBrends {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10%; /* Отступ слева */
+  padding-right: 10%; /* Отступ справа */
+  width: 100%;
+}
+
+.mySwiperBrends .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center; /* исправлено с justify-items на justify-content */
+  align-items: center;
+  object-fit: cover; /* object-fit применим только к тегам <img> или <video> */
+}
+
+.mySwiperBrends .swiper-slide img {
+  width: auto; 
+  height: 100%;
+  object-fit: cover; 
+  filter: grayscale(100%); 
+  transition: filter 0.5s ease-in-out; 
+}
+
+.mySwiperBrends .swiper-slide img:hover {
+  filter: grayscale(0%); 
+}
+
+.mySwiperBrends .swiper-button-next::after,
+.mySwiperBrends .swiper-button-prev::after {
+  color: rgb(140, 139, 139);
+  position: absolute;
+  border-radius: 25px;
+  font-size: 1.5em;
+  
+}
+
+.mySwiperBrends .swiper-button-next::after{
+    right: 10px;
+}
+
+.mySwiperBrends .swiper-button-prev::after {
+  left: 10px;
+}
+
+/* hr */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8b8b8b, #f0f0f0);
+  border-radius: 5px;
+}
+
+/* Слайдер продуктов */
+    .tabs .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    }
+
+    /* Стили для активного таба */
+    .tabs .tab.active {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Стили для таба при наведении (не активного) */
+    .tabs .tab:not(.active):hover {
+    background-color: #e0e0e0;
+    }
+
+    /* Стили для таба при наведении (активного) */
+    .tabs .tab.active:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .swiperContainerProducts {
+        width: 100%;
+        height: 700px;
+      background-color: whitesmoke;
+    }
+
+    .swiperContainerProducts .tabs{
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .swiperContainerProducts .swiper-slide {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 70%;
+      overflow: hidden;
+    }
+
+    .swiperContainerProducts .swiper-slide img {
+      height: 250px;
+      
+      width: auto;
+      object-fit: cover;
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+
+
+    .swiperContainerProducts .swiper-wrapper p{
+        height: 30px;
+        padding-bottom: 10px;
+    }
+
+    .swiperContainerProducts .swiper-wrapper h3{
+        height: 150px;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .swiperContainerProducts .swiper {
+      width: 100px;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .swiperContainerProducts .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .swiperContainerProducts .append-buttons button {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid #007aff;
+      color: #007aff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+
+    .swiperContainerProducts .swiper-button-next::after,
+    .swiperContainerProducts .swiper-button-prev::after
+    {
+          color: var(--blueGradient);
+    }
+    
